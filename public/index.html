@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <title>Riot</title>
+    </head>
+    <style>
+        body{
+            background-color: #7e80ff;
+        }
+    </style>
+    <body>
+        
+        <h1 style="text-align: center;">Campeones de League of Legends</h1>
+        <div id="App" class="rounded p-1 m-1" >
+
+<!-- --------------------------------------------------------------------------- -->
+            <div style="text-align: center;">
+                <button id= "btnObtener" class="btn btn-primary" type="button">Obtener Campeones</button> 
+            </div>
+            <div class="rounded p-1 m-1 ">
+                <form id="formCampeones">
+                    <label for="txtNombre">Nombre: </label>
+                    <input type="text" id="txtNombre" class ="rounded p-1 m-1"/>
+<!-- --------------------------------------------------------------------------- -->
+                    <label for="txtRegion">Region: </label>
+                    <input type="text" id="txtRegion" class ="rounded p-1 m-1"/>
+<!-- --------------------------------------------------------------------------- -->
+                    <label for="txtTipo">Tipo: </label>
+                    <input type="text" id="txtTipo" class ="rounded p-1 m-1"/>
+<!-- --------------------------------------------------------------------------- -->
+                    <label for="txtCosto">Costo: </label>
+                    <input type="text" id="txtCosto" class ="rounded p-1 m-1"/>
+                    <button type="submit" class="btn btn-success">Crear Campeon</button>
+                </form>
+                
+<!-- --------------------------------------------------------------------------- -->                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Region</th>
+                            <th>Tipo</th>
+                            <th>Costo</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+<!-- --------------------------------------------------------------------------- -->
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous"></script>
+
+        <script src="app.js"></script>
+    </body>
+
+</html>
